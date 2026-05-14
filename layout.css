@@ -1,8 +1,4 @@
 /*
--- Estilos CSS - Website da Empresa
-*/
-
-/*
 -- Padrões e Reset
 */
 
@@ -16,71 +12,75 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal;}
 */
 
 body {
-	color: #333;
-	background: #FFF url(fundo_site.jpg);
+	color: #3b2f2f;
+	background: #f5efe6 url(fundo_site.jpg);
 }
 
-
 body, input, select, textarea {
-	/* fonte: http://www.sitepoint.com/eight-definitive-font-stacks-2/ */
-	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+	font-family: "Segoe UI", Candara, "Trebuchet MS", Verdana, sans-serif;
 }
 
 a:link {
-	color: #0F599F;
+	color: #8b5e3c;
 }
 
 a:visited {
-	color: #666;
+	color: #6e4a30;
 }
 
 a:hover {
-	color: #000;
+	color: #c08a4b;
 	text-decoration: none;
 }
 
 a:focus {
-	outline: 1px dotted #F00;
+	outline: 1px dotted #c08a4b;
 }
 
 a:active {
-	color: #F00;
+	color: #a56a2a;
 }
 
 p {
 	font-size: 16px;
-	margin-bottom: 1.5em;
-	line-height: 1.4em;
+	margin-bottom: 1.6em;
+	line-height: 1.6em;
 }
 
+/*
+-- Títulos
+*/
+
 #conteudo-principal h1 {
-    font-size: 36px;
-    margin-bottom: 0.5em;
+	font-size: 36px;
+	margin-bottom: 0.5em;
+	color: #5a3e2b;
 }
- 
+
 #conteudo-principal h2,
 #conteudo-secundario h1 {
-    font-size: 24px;
-    margin-bottom: 0.5em;
+	font-size: 24px;
+	margin-bottom: 0.5em;
+	color: #7b5235;
 }
- 
+
 #conteudo-secundario p {
-    font-size: 14px;
+	font-size: 14px;
 }
- 
+
 #conteudo-principal ul,
 #conteudo-principal ol {
-    font-size: 16px;
-    margin-left: 1.5em;
-    margin-bottom: 1.5em;
+	font-size: 16px;
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
 }
- 
+
 #conteudo-principal ul {
-    list-style-type: square;
+	list-style-type: square;
 }
- 
+
 #conteudo-principal li {
-    margin-bottom: 0.3em;
+	margin-bottom: 0.3em;
 }
 
 /*
@@ -92,9 +92,21 @@ p {
 	margin: 0 auto;
 }
 
+#conteudo {
+	background: #ffffff;
+	padding: 30px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	border-radius: 6px;
+}
+
 #cabecalho {
 	position: relative;
+	padding-top: 10px;
 }
+
+/*
+-- Logo
+*/
 
 #logo {
 	padding: 10px 0;
@@ -106,9 +118,13 @@ p {
 	display: block;
 }
 
+/*
+-- Menu
+*/
+
 #menu-principal {
 	position: absolute;
-	top: 26px;
+	top: 30px;
 	right: 0;
 }
 
@@ -121,22 +137,38 @@ p {
 	float: left;
 	font-size: 18px;
 	text-decoration: none;
-	color: #333333;
-	margin-left: 32px;
+	color: #4b3a2a;
+	margin-left: 28px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid transparent;
+	transition: all 0.3s ease;
 }
 
-#menu-principal a:hover, #menu-principal a.ativo {
-	color: #0f599f;
+#menu-principal a:hover {
+	color: #c08a4b;
+	border-bottom: 2px solid #c08a4b;
 }
 
 #menu-principal a.ativo {
+	color: #8b5e3c;
 	font-weight: bold;
+	border-bottom: 2px solid #8b5e3c;
 }
+
+/*
+-- Foto Principal
+*/
 
 #foto-principal {
 	height: 300px;
 	background: #c0a27e url(foto_principal.png) no-repeat center top;
+	border-radius: 6px;
+	margin-bottom: 25px;
 }
+
+/*
+-- Conteúdo Secundário
+*/
 
 #conteudo-secundario {
 	width: 280px;
@@ -144,10 +176,24 @@ p {
 
 #conteudo-secundario img {
 	display: block;
+	border-radius: 4px;
+	box-shadow: 0 3px 8px rgba(0,0,0,0.08);
 }
 
+/*
+-- Rodapé
+*/
+
 #rodape-fora {
-	background: #c0a27e;
+	background: #6b4a2f;
+	margin-top: 40px;
+}
+
+#rodape {
+	color: #ffffff;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 14px;
 }
 
 /*
@@ -164,16 +210,9 @@ p {
 	background: #c0a27e;
 	font-style: italic;
 	text-align: center;
-	padding: 0.3em 0.6em;
+	padding: 0.4em 0.6em;
+	border-radius: 0 0 4px 4px;
 }
-
-/*
--- Formulários
-*/
-
-/*
--- Tabelas
-*/
 
 /*
 -- Classes de Uso Geral
